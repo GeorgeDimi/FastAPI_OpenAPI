@@ -8,7 +8,7 @@ from typing import List, Optional, Union
 
 from fastapi import FastAPI
 
-from .models import Error, NewPet, Pet
+from models import Error, NewPet, Pet
 
 app = FastAPI(
     title='PetStoreAPI',
@@ -41,10 +41,10 @@ def add_pet(body: NewPet) -> Union[Pet, Error]:
 
 
 @app.get('/pets/{id}', response_model=Pet, responses={'default': {'model': Error}})
-def find_pet_by_id(id: int, id: int = ...) -> Union[Pet, Error]:
+def find_pet_by_id(id: int) -> Union[Pet, Error]:
     pass
 
 
 @app.delete('/pets/{id}', response_model=None, responses={'default': {'model': Error}})
-def delete_pet(id: int, id: int = ...) -> Union[None, Error]:
+def delete_pet(id: int) -> Union[None, Error]:
     pass

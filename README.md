@@ -17,6 +17,12 @@ To run the application we the will use Uvicorn package:
 pip install unicorn
 ```
 
+And for the Server we will need the fastAPI package:
+
+````
+pip install fastapi
+````
+
 ## Generate Server
 
 To generate the server simply use the following command:
