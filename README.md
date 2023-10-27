@@ -1,2 +1,2 @@
 # FastAPI_OpenAPI
-An example project for generating an FastAPI Python server from an OpenApi file.
+An example project for generating a FastAPI Python server from an OpenApi file.
