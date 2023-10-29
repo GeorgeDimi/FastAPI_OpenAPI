@@ -11,7 +11,7 @@ pip install fastapi-code-generator
 
 ````
 
-To run the application we the will use Uvicorn package:
+To run the application we will use the Uvicorn package:
 
 ```
 pip install unicorn
